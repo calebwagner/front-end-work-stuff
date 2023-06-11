@@ -1,0 +1,118 @@
+body {
+    background-color: #ADD8E6;
+    width: 50%;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+
+  .card-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to next line on smaller screens */
+    justify-content: space-between;
+    width: 100%;
+  }
+  .card-text {
+    margin-left: 10px;
+    weight: 700 !important;
+    size: 16px !important;
+    line-height: 26px;
+    font-weight: bold;
+  }
+  .a-tag {
+    display: inline;
+  }
+  .left-section,
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-basis: 45%; /* Adjust the width as needed */
+  }
+
+  .card-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap; /* Prevent wrapping of flex items */
+  }
+  .card-item a {
+    display: flex; /* Make the anchor tag a flex container */
+    align-items: center; /* Center the icon and text vertically */
+    gap: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .centered-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Media query for smaller screens */
+  @media only screen and (max-width: 600px) {
+    .card {
+      width: 100%; /* Adjust the card width to fit the screen */
+      height: auto; /* Allow height to adjust based on content */
+    }
+
+    .left-section,
+    .right-section {
+      flex-basis: 100%; /* Make sections take full width on smaller screens */
+    }
+  }
+  .card-item {
+      position: relative;
+      display: block;
+      padding: 15px;
+  }
+  .hca-button--raised.hca-button--primary {
+      background-color: #00558c;
+  }
+  .hca-button--raised {
+      color: white;
+      background-color: #465561;
+  }
+  .hca-button, .hca-button--group {
+      display: inline-block;
+      box-sizing: border-box;
+      min-width: 90px;
+      height: 40px;
+      padding-top: 0;
+      padding-right: 15px;
+      padding-bottom: 0;
+      padding-left: 15px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      font-family: "Open Sans",Helvetica,Arial,sans-serif;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      line-height: 40px;
+      background-color: transparent;
+      border-radius: 5px;
+      border: 0;
+      transition: .2s ease-in-out;
+      cursor: pointer;
+      text-overflow: ellipsis;
+      white-space: normal;
+      overflow: hidden;
+      color: white;
+  }
+  button, html input[type=button], input[type=reset], input[type=submit] {
+      -webkit-appearance: button;
+      cursor: pointer;
+  }

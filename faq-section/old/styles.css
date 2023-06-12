@@ -1,0 +1,22 @@
+.faq-card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .expansion-panel--title {
+    cursor: pointer;
+  }
+  
+  .expansion-panel__content {
+    overflow: hidden;
+    transition: height 0.3s;
+    height: 0;
+  }
+  
+  .expansion-panel__content--body {
+    margin-top: 10px;
+  }
+  

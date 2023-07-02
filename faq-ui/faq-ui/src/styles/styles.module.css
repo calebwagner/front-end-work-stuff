@@ -60,4 +60,20 @@ body {
   .itemBtnExpanded .chevron {
     transform: rotate(180deg);
   }
+
+  .flex {
+    display: flex;
+  }
+
+  .border-b {
+    border-bottom: 1px solid;
+  }
+
+  .border-gray-300 {
+    border-color: #e5e7eb;
+  }
+
+  .p-4 {
+    padding: 16px;
+  }
   

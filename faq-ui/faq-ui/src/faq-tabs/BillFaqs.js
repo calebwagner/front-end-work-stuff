@@ -1,47 +1,22 @@
-import { Accordion, AccordionItem as Item } from "@szhsin/react-accordion";
-import chevronDown from "../assets/chevron-down.svg";
-import styles from "../styles/styles.module.css";
+import React from 'react';
+import styles from '../styles/styles.module.css';
+import { AccordionItem } from '../components/AccordionItem';
 
-const AccordionItem = ({ header, ...rest }) => (
-  <Item
-    {...rest}
-    header={
-      <>
-        {header}
-        <img className={styles.chevron} src={chevronDown} alt="Chevron Down" />
-      </>
-    }
-    className={styles.item}
-    buttonProps={{
-      className: ({ isEnter }) =>
-        `${styles.itemBtn} ${isEnter && styles.itemBtnExpanded}`
-    }}
-    contentProps={{ className: styles.itemContent }}
-    panelProps={{ className: styles.itemPanel }}
-  />
-);
-
-export default function BillFaqs() {
+export const BillPayFaqs = () => {
   return (
     <div>
       <div className={styles.accordion}>
-        {/* `transitionTimeout` prop should be equal to the transition duration in CSS */}
-        <Accordion transition transitionTimeout={250}>
-          <AccordionItem header="#3 What is Lorem Ipsum?">
-            #3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <div>
+          <AccordionItem question="#3 What is Lorem Ipsum?">
+            #3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </AccordionItem>
-
-          <AccordionItem header="Where does it come from?">
-            Quisque eget luctus mi, vehicula mollis lorem. Proin fringilla vel
-            erat quis sodales. Nam ex enim, eleifend venenatis lectus vitae.
+          <AccordionItem question="Where does it come from?">
+            Quisque eget luctus mi, vehicula mollis lorem. Proin fringilla vel erat quis sodales. Nam ex enim, eleifend venenatis lectus vitae.
           </AccordionItem>
-
-          <AccordionItem header="Why do we use it?">
-            Suspendisse massa risus, pretium id interdum in, dictum sit amet
-            ante. Fusce vulputate purus sed tempus feugiat.
+          <AccordionItem question="Why do we use it?">
+            12 Suspendisse massa risus, pretium id interdum in, dictum sit amet ante. Fusce vulputate purus sed tempus feugiat.
           </AccordionItem>
-        </Accordion>
+        </div>
       </div>
     </div>
   );

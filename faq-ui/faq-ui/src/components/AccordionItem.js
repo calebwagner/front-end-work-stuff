@@ -1,7 +1,5 @@
 import { useState } from "react";
-import chevronDown from '../assets/chevron-down.svg';
-import styles from '../styles/styles.module.css';
-
+import "../styles/main.css"
 
 export const AccordionItem = ({ question, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +12,7 @@ export const AccordionItem = ({ question, children }) => {
       </a>
       {isOpen &&
       <div className={`expansion-panel__content collapse ${isOpen == true ? "in" : ""}`}>
-        <div className="expansion-panel__content--body">{children}</div>
+        <div className="expansion-panel__content--body">{<div dangerouslySetInnerHTML={{ __html: children }} />}</div>
      </div>}
     </div>
   );

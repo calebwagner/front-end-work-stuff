@@ -1,4 +1,4 @@
-[
+ [
     {
         "id": 17,
         "title": "General questions",
@@ -7,6 +7,15 @@
         "answer": "<ul><li><strong> Hospital Visits </strong></li><ul><li> Health information availability for the past 24 months.</li><li> Creating a Caregiver/proxy relationship for hospital medical records.</li><li> Paying a hospital bill.</li><li> Register for an inpatient or outpatient procedure, labor and delivery or mammogram.</li><li> Find and register for a hospital class or other event.</li><li>Share records</li></ul> <br><br><li> <strong> Physician Visits </strong></li><ul><li> Making an appointment with my primary care physician or a specialist</li></ul> <br><br><li> <strong> Urgent Care </strong></li><ul><li> Health information availability. (<strong>effective date June 1, 2020</strong>)</li><li> Sharing my records. (<strong>effective date June 1, 2020</strong>)</li></ul></ul>",
         "sortOrder": 5,
         "category": null
+    },
+    {
+        "id": 15,
+        "title": "About paying your bills",
+        "topicId": 7,
+        "question": "What if I have other questions about paying bills?",
+        "answer": "<ul><li>For further assistance with paying bills, please call <a href=\"tel:844-236-3525\" class=\"faq-phone-15 hca-outline-wider hca-underline-link\" title=\"Call with Questions\">(844) 236-3525</a>.</li></ul>",
+        "sortOrder": 160,
+        "category": "HELP"
     },
     {
         "id": 0,
@@ -124,14 +133,5 @@
         "answer": "<ul>\r\n<li>MyHealthONE does not offer this as a feature of bill pay right now.</li>\r\n<li>The ability to save your payment method will be a future enhancement of this feature.</li>\r\n</ul>",
         "sortOrder": 150,
         "category": null
-    },
-    {
-        "id": 15,
-        "title": "About paying your bills",
-        "topicId": 7,
-        "question": "What if I have other questions about paying bills?",
-        "answer": "<ul><li>For further assistance with paying bills, please call <a href=\"tel:844-236-3525\" class=\"faq-phone-15 hca-outline-wider hca-underline-link\" title=\"Call with Questions\">(844) 236-3525</a>.</li></ul>",
-        "sortOrder": 160,
-        "category": "HELP"
     }
 ]
